@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PxlExercisesThree", "PxlExercisesThree\PxlExercisesThree.csproj", "{0547FBFF-61DF-430A-83D1-1DEE49C9B0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleCalc", "CircleCalc\CircleCalc.csproj", "{BE2971F4-B8C9-483D-BE6E-9B5354E18841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0547FBFF-61DF-430A-83D1-1DEE49C9B0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0547FBFF-61DF-430A-83D1-1DEE49C9B0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0547FBFF-61DF-430A-83D1-1DEE49C9B0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0547FBFF-61DF-430A-83D1-1DEE49C9B0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2971F4-B8C9-483D-BE6E-9B5354E18841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2971F4-B8C9-483D-BE6E-9B5354E18841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2971F4-B8C9-483D-BE6E-9B5354E18841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2971F4-B8C9-483D-BE6E-9B5354E18841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
