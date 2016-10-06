@@ -52,6 +52,10 @@ namespace CircleCalc
 
             resultaat3 = "3" + (3 * geheel);
             MessageBox.Show(resultaat3);
+
+            MessageBox.Show(String.Format("{0:c}", decimaal)); //contains leading zeroes
+            //String.Format ":c" puts local currency symbol
+            MessageBox.Show(String.Format("{0:##.000}", decimaal)); //drops leading zeroes
         }
     }
 }
