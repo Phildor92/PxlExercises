@@ -16,7 +16,7 @@ namespace CircleCalc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelefoonKost());
+            Application.Run(new Studiebeursberekening());
         }
     }
 }

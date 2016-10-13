@@ -23,8 +23,6 @@ namespace CircleCalc
             Double decimaal = 3.6;
 
             MessageBox.Show(decimaal.ToString());
-            Int32 resultaat;
-            Double resultaat2;
             String resultaat3;
             /*
 

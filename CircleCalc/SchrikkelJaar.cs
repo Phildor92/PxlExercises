@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace CircleCalc
 {
@@ -38,7 +39,7 @@ namespace CircleCalc
             TextBox[] resultaten = new TextBox[] { result1Txt, result2Txt, result3Txt, result4Txt, result5Txt, result6Txt};
             for (int i = 0; i < jaren.Length; i++)
             {
-                if (BepaalSchrikkeljaar(jaren[i]))
+                if (bepaalSchrikkeljaar(jaren[i]))
                 {
                     resultaten[i].Text = "Schrikkel";
                 } else
@@ -48,7 +49,7 @@ namespace CircleCalc
             }
         }
 
-        private bool BepaalSchrikkeljaar (int year)
+        private bool bepaalSchrikkeljaar (int year)
         {
             bool isLeap;
             if (year % 4 == 0)
@@ -79,12 +80,12 @@ namespace CircleCalc
 
         private void testBtn3_Click(object sender, EventArgs e)
         {
-            result1Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar1Txt.Text)));
-            result2Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar2Txt.Text)));
-            result3Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar3Txt.Text)));
-            result4Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar4Txt.Text)));
-            result5Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar5Txt.Text)));
-            result6Txt.Text = String.Format("{0:d}", BepaalSchrikkeljaar(Convert.ToInt32(jaar6Txt.Text)));
+            result1Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar1Txt.Text)));
+            result2Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar2Txt.Text)));
+            result3Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar3Txt.Text)));
+            result4Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar4Txt.Text)));
+            result5Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar5Txt.Text)));
+            result6Txt.Text = String.Format("{0:d}", bepaalSchrikkeljaar(Convert.ToInt32(jaar6Txt.Text)));
         }
 
         private void wissenBtn_Click(object sender, EventArgs e)
@@ -102,6 +103,29 @@ namespace CircleCalc
             jaar4Txt.Clear();
             jaar5Txt.Clear();
             jaar6Txt.Clear();
+        }
+
+        private void testBtn4_Click(object sender, EventArgs e)
+        {
+            resultaatC1Txt.Text = bepaalSchrikkeljaar(jaar1Txt.Text);
+            resultaatC2Txt.Text = bepaalSchrikkeljaar(jaar2Txt.Text);
+            resultaatC3Txt.Text = bepaalSchrikkeljaar(jaar3Txt.Text);
+            resultaatC4Txt.Text = bepaalSchrikkeljaar(jaar4Txt.Text);
+            resultaatC5Txt.Text = bepaalSchrikkeljaar(jaar5Txt.Text);
+            resultaatC6Txt.Text = bepaalSchrikkeljaar(jaar6Txt.Text);
+        }
+
+        private string bepaalSchrikkeljaar(string year)
+        {
+            string resultaat;
+            if(Information.IsNumeric(year) == false)
+            {
+                resultaat = "Is niet numeriek";
+            } else
+            {
+                resultaat = DateTime.IsLeapYear(Convert.ToInt32(year)).ToString();
+            }
+            return resultaat;
         }
     }
 }

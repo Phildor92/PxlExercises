@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,11 +95,23 @@
     <Compile Include="Leeftijd.Designer.cs">
       <DependentUpon>Leeftijd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lotto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotto.Designer.cs">
+      <DependentUpon>Lotto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Machtsverheffing.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Machtsverheffing.Designer.cs">
       <DependentUpon>Machtsverheffing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parking.Designer.cs">
+      <DependentUpon>Parking.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,6 +132,12 @@
     </Compile>
     <Compile Include="SchrikkelJaar.Designer.cs">
       <DependentUpon>SchrikkelJaar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studiebeursberekening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studiebeursberekening.Designer.cs">
+      <DependentUpon>Studiebeursberekening.cs</DependentUpon>
     </Compile>
     <Compile Include="TelefoonKost.cs">
       <SubType>Form</SubType>
@@ -156,6 +175,9 @@
     <EmbeddedResource Include="Machtsverheffing.resx">
       <DependentUpon>Machtsverheffing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Parking.resx">
+      <DependentUpon>Parking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -173,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SchrikkelJaar.resx">
       <DependentUpon>SchrikkelJaar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studiebeursberekening.resx">
+      <DependentUpon>Studiebeursberekening.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelefoonKost.resx">
       <DependentUpon>TelefoonKost.cs</DependentUpon>

@@ -27,34 +27,21 @@ namespace CircleCalc
             int duurVanGesprekMin = 0;
             int beginUurInt = Convert.ToInt32(beginUurTxt.Text);
             int eindUurInt = Convert.ToInt32(eindUurTxt.Text);
-            int beginMinInt = Convert.ToInt32(beginMinuutTxt.Text);
+            int beginMinInt = Convert.ToInt32(beginMinTxt.Text);
             int eindMinInt = Convert.ToInt32(eindMinTxt.Text);
             bool isDal = false;
             double gespreksPrijs = 0.0;
             string typGesprek = soortGesprekTxt.Text;
+            bool juistGesprekType = true;
 
             if (beginUurInt <= eindUurInt)
             {
-                duurVanGesprekMin = eindUurInt*60 - beginUurInt*60;
-                if (beginMinInt <= eindMinInt)
-                {
-                    duurVanGesprekMin += eindMinInt - beginMinInt;
-                }
-                else
-                {
-                    duurVanGesprekMin += (eindMinInt + 60) - beginMinInt;
-                }
-            } else //does not account for start minute and end minute being the same
+                duurVanGesprekMin = (eindUurInt*60 + eindMinInt) - (beginUurInt*60 + beginMinInt);
+              
+            } else 
             {
                 //duurVanGesprek for times between different days
-                duurVanGesprekMin = (eindUurInt+24)*60 - beginUurInt*60;
-                if (beginMinInt <= eindMinInt)
-                {
-                    duurVanGesprekMin += eindMinInt - beginMinInt;
-                } else
-                {
-                    duurVanGesprekMin += (eindMinInt+60) - beginMinInt;
-                }
+                duurVanGesprekMin = ((eindUurInt+24) * 60 + eindMinInt) - (beginUurInt * 60 + beginMinInt);
             }
 
             if ((beginUurInt > 16 || beginUurInt < 8) && ((eindUurInt > 16) || (eindUurInt < 8)))
@@ -88,11 +75,31 @@ namespace CircleCalc
                 case "g":
                     gespreksPrijs = duurVanGesprekMin * 0.15;
                     break;
-                default: break;
+                default: juistGesprekType = false; break;
             }
-            
+            if (juistGesprekType)
+            {
+                resultaatTxt.Text = "Duur van oproep: " + duurVanGesprekMin + " minuten\r\nKosten van oproep: " + String.Format("{0:c}", gespreksPrijs);
+                if (!isDal)
+                {
+                    resultaatTxt.Text += "\r\nPiekgesprek"; 
+                }
+            }
+            else
+            {
+                resultaatTxt.Text = "Fout gesprektype!";
+            }
+        }
 
-            resultaatTxt.Text = isDal + "\r\n" + String.Format("{0:00}",duurVanGesprekMin) + " minuten\r\n" + "\r\nPrijs van gesprek: " + String.Format("{0:c}",gespreksPrijs);
-        }   
+        private void wissenBtn_Click(object sender, EventArgs e)
+        {
+            resultaatTxt.Clear();
+            soortGesprekTxt.Clear();
+            eindMinTxt.Text = "0";
+            eindUurTxt.Text = "0";
+            beginMinTxt.Text = "0"; ;
+            beginUurTxt.Text  = "0";;
+            beginUurTxt.Focus();
+        }
     }
 }

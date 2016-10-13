@@ -45,12 +45,12 @@
             this.result3Txt = new System.Windows.Forms.TextBox();
             this.result2Txt = new System.Windows.Forms.TextBox();
             this.result1Txt = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.resultaatC6Txt = new System.Windows.Forms.TextBox();
+            this.resultaatC5Txt = new System.Windows.Forms.TextBox();
+            this.resultaatC4Txt = new System.Windows.Forms.TextBox();
+            this.resultaatC3Txt = new System.Windows.Forms.TextBox();
+            this.resultaatC2Txt = new System.Windows.Forms.TextBox();
+            this.resultaatC1Txt = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -62,6 +62,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.testBtn3 = new System.Windows.Forms.Button();
             this.wissenBtn = new System.Windows.Forms.Button();
+            this.testBtn4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -201,57 +202,57 @@
             this.result1Txt.Size = new System.Drawing.Size(94, 20);
             this.result1Txt.TabIndex = 11;
             // 
-            // textBox13
+            // resultaatC6Txt
             // 
-            this.textBox13.Location = new System.Drawing.Point(235, 145);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(63, 20);
-            this.textBox13.TabIndex = 22;
+            this.resultaatC6Txt.Location = new System.Drawing.Point(235, 145);
+            this.resultaatC6Txt.Name = "resultaatC6Txt";
+            this.resultaatC6Txt.ReadOnly = true;
+            this.resultaatC6Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC6Txt.TabIndex = 22;
             // 
-            // textBox14
+            // resultaatC5Txt
             // 
-            this.textBox14.Location = new System.Drawing.Point(235, 118);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(63, 20);
-            this.textBox14.TabIndex = 21;
+            this.resultaatC5Txt.Location = new System.Drawing.Point(235, 118);
+            this.resultaatC5Txt.Name = "resultaatC5Txt";
+            this.resultaatC5Txt.ReadOnly = true;
+            this.resultaatC5Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC5Txt.TabIndex = 21;
             // 
-            // textBox15
+            // resultaatC4Txt
             // 
-            this.textBox15.Location = new System.Drawing.Point(235, 91);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(63, 20);
-            this.textBox15.TabIndex = 20;
+            this.resultaatC4Txt.Location = new System.Drawing.Point(235, 91);
+            this.resultaatC4Txt.Name = "resultaatC4Txt";
+            this.resultaatC4Txt.ReadOnly = true;
+            this.resultaatC4Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC4Txt.TabIndex = 20;
             // 
-            // textBox16
+            // resultaatC3Txt
             // 
-            this.textBox16.Location = new System.Drawing.Point(235, 64);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(63, 20);
-            this.textBox16.TabIndex = 19;
+            this.resultaatC3Txt.Location = new System.Drawing.Point(235, 64);
+            this.resultaatC3Txt.Name = "resultaatC3Txt";
+            this.resultaatC3Txt.ReadOnly = true;
+            this.resultaatC3Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC3Txt.TabIndex = 19;
             // 
-            // textBox17
+            // resultaatC2Txt
             // 
-            this.textBox17.Location = new System.Drawing.Point(235, 38);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(63, 20);
-            this.textBox17.TabIndex = 18;
+            this.resultaatC2Txt.Location = new System.Drawing.Point(235, 38);
+            this.resultaatC2Txt.Name = "resultaatC2Txt";
+            this.resultaatC2Txt.ReadOnly = true;
+            this.resultaatC2Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC2Txt.TabIndex = 18;
             // 
-            // textBox18
+            // resultaatC1Txt
             // 
-            this.textBox18.Location = new System.Drawing.Point(235, 12);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(63, 20);
-            this.textBox18.TabIndex = 17;
+            this.resultaatC1Txt.Location = new System.Drawing.Point(235, 12);
+            this.resultaatC1Txt.Name = "resultaatC1Txt";
+            this.resultaatC1Txt.ReadOnly = true;
+            this.resultaatC1Txt.Size = new System.Drawing.Size(103, 20);
+            this.resultaatC1Txt.TabIndex = 17;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(304, 145);
+            this.textBox19.Location = new System.Drawing.Point(344, 145);
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(93, 20);
@@ -259,7 +260,7 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(304, 118);
+            this.textBox20.Location = new System.Drawing.Point(344, 118);
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(93, 20);
@@ -267,7 +268,7 @@
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(304, 91);
+            this.textBox21.Location = new System.Drawing.Point(344, 91);
             this.textBox21.Name = "textBox21";
             this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(93, 20);
@@ -275,7 +276,7 @@
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(304, 64);
+            this.textBox22.Location = new System.Drawing.Point(344, 64);
             this.textBox22.Name = "textBox22";
             this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(93, 20);
@@ -283,7 +284,7 @@
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(304, 38);
+            this.textBox23.Location = new System.Drawing.Point(344, 38);
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(93, 20);
@@ -291,7 +292,7 @@
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(304, 12);
+            this.textBox24.Location = new System.Drawing.Point(344, 12);
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(93, 20);
@@ -346,11 +347,22 @@
             this.wissenBtn.UseVisualStyleBackColor = true;
             this.wissenBtn.Click += new System.EventHandler(this.wissenBtn_Click);
             // 
-            // schrikkelJaar
+            // testBtn4
+            // 
+            this.testBtn4.Location = new System.Drawing.Point(125, 198);
+            this.testBtn4.Name = "testBtn4";
+            this.testBtn4.Size = new System.Drawing.Size(75, 23);
+            this.testBtn4.TabIndex = 34;
+            this.testBtn4.Text = "Test 4";
+            this.testBtn4.UseVisualStyleBackColor = true;
+            this.testBtn4.Click += new System.EventHandler(this.testBtn4_Click);
+            // 
+            // SchrikkelJaar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 262);
+            this.ClientSize = new System.Drawing.Size(509, 262);
+            this.Controls.Add(this.testBtn4);
             this.Controls.Add(this.wissenBtn);
             this.Controls.Add(this.testBtn3);
             this.Controls.Add(this.label6);
@@ -362,12 +374,12 @@
             this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox23);
             this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.resultaatC6Txt);
+            this.Controls.Add(this.resultaatC5Txt);
+            this.Controls.Add(this.resultaatC4Txt);
+            this.Controls.Add(this.resultaatC3Txt);
+            this.Controls.Add(this.resultaatC2Txt);
+            this.Controls.Add(this.resultaatC1Txt);
             this.Controls.Add(this.result6Txt);
             this.Controls.Add(this.result5Txt);
             this.Controls.Add(this.result4Txt);
@@ -385,7 +397,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "schrikkelJaar";
+            this.Name = "SchrikkelJaar";
             this.Text = "schrikkelJaar";
             this.Load += new System.EventHandler(this.schrikkelJaar_Load);
             this.ResumeLayout(false);
@@ -412,12 +424,12 @@
         private System.Windows.Forms.TextBox result3Txt;
         private System.Windows.Forms.TextBox result2Txt;
         private System.Windows.Forms.TextBox result1Txt;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox resultaatC6Txt;
+        private System.Windows.Forms.TextBox resultaatC5Txt;
+        private System.Windows.Forms.TextBox resultaatC4Txt;
+        private System.Windows.Forms.TextBox resultaatC3Txt;
+        private System.Windows.Forms.TextBox resultaatC2Txt;
+        private System.Windows.Forms.TextBox resultaatC1Txt;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox21;
@@ -429,5 +441,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button testBtn3;
         private System.Windows.Forms.Button wissenBtn;
+        private System.Windows.Forms.Button testBtn4;
     }
 }

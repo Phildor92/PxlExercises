@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.beginUurTxt = new System.Windows.Forms.TextBox();
-            this.beginMinuutTxt = new System.Windows.Forms.TextBox();
+            this.beginMinTxt = new System.Windows.Forms.TextBox();
             this.eindUurTxt = new System.Windows.Forms.TextBox();
             this.eindMinTxt = new System.Windows.Forms.TextBox();
             this.soortGesprekTxt = new System.Windows.Forms.TextBox();
@@ -51,12 +51,12 @@
             this.beginUurTxt.Size = new System.Drawing.Size(40, 20);
             this.beginUurTxt.TabIndex = 0;
             // 
-            // beginMinuutTxt
+            // beginMinTxt
             // 
-            this.beginMinuutTxt.Location = new System.Drawing.Point(95, 39);
-            this.beginMinuutTxt.Name = "beginMinuutTxt";
-            this.beginMinuutTxt.Size = new System.Drawing.Size(39, 20);
-            this.beginMinuutTxt.TabIndex = 1;
+            this.beginMinTxt.Location = new System.Drawing.Point(95, 39);
+            this.beginMinTxt.Name = "beginMinTxt";
+            this.beginMinTxt.Size = new System.Drawing.Size(39, 20);
+            this.beginMinTxt.TabIndex = 1;
             // 
             // eindUurTxt
             // 
@@ -97,15 +97,16 @@
             this.wissenBtn.TabIndex = 6;
             this.wissenBtn.Text = "Wissen";
             this.wissenBtn.UseVisualStyleBackColor = true;
+            this.wissenBtn.Click += new System.EventHandler(this.wissenBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(141, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 13);
+            this.label1.Size = new System.Drawing.Size(219, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Z-zonaal, N-nationaal, I-internationaa, G-gsm";
+            this.label1.Text = "Z-zonaal, N-nationaal, I-internationaal, G-gsm";
             // 
             // label2
             // 
@@ -179,7 +180,7 @@
             this.Controls.Add(this.soortGesprekTxt);
             this.Controls.Add(this.eindMinTxt);
             this.Controls.Add(this.eindUurTxt);
-            this.Controls.Add(this.beginMinuutTxt);
+            this.Controls.Add(this.beginMinTxt);
             this.Controls.Add(this.beginUurTxt);
             this.Name = "TelefoonKost";
             this.Text = "TelefoonKost";
@@ -191,7 +192,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox beginUurTxt;
-        private System.Windows.Forms.TextBox beginMinuutTxt;
+        private System.Windows.Forms.TextBox beginMinTxt;
         private System.Windows.Forms.TextBox eindUurTxt;
         private System.Windows.Forms.TextBox eindMinTxt;
         private System.Windows.Forms.TextBox soortGesprekTxt;
