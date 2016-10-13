@@ -32,12 +32,18 @@ namespace CircleCalc
             Double[] totaalKms = new Double[personen.Length];
             String[] resultaten = new String[personen.Length];
             Double[] kosten = new Double[personen.Length];
+            int j = 0;
 
             for (int i = 0; i < personen.Length; i++)
             {
-                totaalKms[i] = aantalVerpl[i] * aantalKm[i] * 2;
-                kosten[i] = aantalVerpl[i] * aantalKm[i] * 2 * 0.15;
-                resultaten[i] = personen[i] + "\t\t : " + String.Format("{0:00}",aantalVerpl[i]) + " verplaatsingen -  " + String.Format("{0:00}", totaalKms[i]) + " km in totaal afgelegd -\t vergoeding: \t" + String.Format("{0:c}", kosten[i]); 
+                
+                if (personen[i] != "") //
+                {
+                    totaalKms[i] = aantalVerpl[i] * aantalKm[i] * 2;
+                    kosten[i] = aantalVerpl[i] * aantalKm[i] * 2 * 0.15;
+                    resultaten[j] = personen[i].PadRight(25) + ": " + aantalVerpl[i].ToString().PadLeft(2) + " verplaatsingen -  " + totaalKms[i].ToString().PadLeft(4) + " km in totaal afgelegd - vergoeding: \t" + String.Format("{0:c}", kosten[i]).PadLeft(9);
+                    j++;
+                } 
             }
 
             resultaatTxt.Lines = resultaten;
@@ -76,15 +82,18 @@ namespace CircleCalc
 
         private void BerekenEnVoegToeAanTxtReusltaat(string naam, string totAantal, string kmPerVerpl)
         {
-            double totaalKm;
-            double vergoeding;
+            if (naam != "")
+            {
+                double totaalKm;
+                double vergoeding;
 
-            totaalKm = Convert.ToDouble(totAantal) * Convert.ToDouble(kmPerVerpl) * 2;
-            vergoeding = totaalKm * 0.15;
+                totaalKm = Convert.ToDouble(totAantal) * Convert.ToDouble(kmPerVerpl) * 2;
+                vergoeding = totaalKm * 0.15;
 
-            resultaatTxt.AppendText("\n" + naam + " verplaatsingen: " + totAantal + " totale km: " + totaalKm + " km en vergoeding: " + vergoeding);
-            //resultaatTxt.Text = "This\r\nshould\nbe\non\nnew\nlines" + Environment.NewLine + "As should this";
-            //\n on its own does not add new line in a text box, but Environment.NewLine or \r\n does...
+                resultaatTxt.AppendText("\n" + naam + " verplaatsingen: " + totAantal + " totale km: " + totaalKm + " km en vergoeding: " + vergoeding);
+                //resultaatTxt.Text = "This\r\nshould\nbe\non\nnew\nlines" + Environment.NewLine + "As should this";
+                //\n on its own does not add new line in a text box, but Environment.NewLine or \r\n does...
+            }
         }
     }
 }

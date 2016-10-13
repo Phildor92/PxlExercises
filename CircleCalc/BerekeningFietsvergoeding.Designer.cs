@@ -63,11 +63,12 @@
             // 
             // resultaatTxt
             // 
+            this.resultaatTxt.Font = new System.Drawing.Font("Courier New", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultaatTxt.Location = new System.Drawing.Point(16, 237);
             this.resultaatTxt.Multiline = true;
             this.resultaatTxt.Name = "resultaatTxt";
             this.resultaatTxt.ReadOnly = true;
-            this.resultaatTxt.Size = new System.Drawing.Size(610, 93);
+            this.resultaatTxt.Size = new System.Drawing.Size(661, 93);
             this.resultaatTxt.TabIndex = 0;
             // 
             // label1
@@ -324,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 383);
+            this.ClientSize = new System.Drawing.Size(707, 383);
             this.Controls.Add(this.altBereken);
             this.Controls.Add(this.wissen);
             this.Controls.Add(this.berekenBtn);

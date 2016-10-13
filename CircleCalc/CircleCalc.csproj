@@ -64,6 +64,12 @@
     <Compile Include="ExerciseOneOctSix.Designer.cs">
       <DependentUpon>ExerciseOneOctSix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Falculteit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Falculteit.Designer.cs">
+      <DependentUpon>Falculteit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBewerking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="FrmSnelste.Designer.cs">
       <DependentUpon>FrmSnelste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctieVoorbeeld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctieVoorbeeld.Designer.cs">
+      <DependentUpon>FunctieVoorbeeld.cs</DependentUpon>
     </Compile>
     <Compile Include="Leeftijd.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,18 @@
     <Compile Include="SalarySlider.Designer.cs">
       <DependentUpon>SalarySlider.cs</DependentUpon>
     </Compile>
+    <Compile Include="SchrikkelJaar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchrikkelJaar.Designer.cs">
+      <DependentUpon>SchrikkelJaar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelefoonKost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelefoonKost.Designer.cs">
+      <DependentUpon>TelefoonKost.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerwachteLengte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +138,17 @@
     <EmbeddedResource Include="CursusGeld.resx">
       <DependentUpon>CursusGeld.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Falculteit.resx">
+      <DependentUpon>Falculteit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBewerking.resx">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSnelste.resx">
       <DependentUpon>FrmSnelste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctieVoorbeeld.resx">
+      <DependentUpon>FunctieVoorbeeld.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leeftijd.resx">
       <DependentUpon>Leeftijd.cs</DependentUpon>
@@ -140,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SalarySlider.resx">
       <DependentUpon>SalarySlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchrikkelJaar.resx">
+      <DependentUpon>SchrikkelJaar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelefoonKost.resx">
+      <DependentUpon>TelefoonKost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerwachteLengte.resx">
       <DependentUpon>VerwachteLengte.cs</DependentUpon>

@@ -16,5 +16,27 @@ namespace CircleCalc
         {
             InitializeComponent();
         }
+
+        private void berekenBtn_Click(object sender, EventArgs e)
+        {
+            double verheffing = 0;
+            Int32 getalInt = Convert.ToInt32(getalTxt.Text);
+            for (int i = 1; i<11; i++)
+            {
+                verheffing = Math.Pow(getalInt, i);
+                resultaatTxt.Text += "Mach " + i + " van " + getalInt + " is " + verheffing.ToString() + Environment.NewLine;
+            }
+        }
+
+        private void wissenBtn_Click(object sender, EventArgs e)
+        {
+            resultaatTxt.Text = "";
+            getalTxt.Text = "";
+        }
+
+        private void sluitenBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

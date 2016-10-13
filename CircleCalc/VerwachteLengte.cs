@@ -24,38 +24,59 @@ namespace CircleCalc
 
         private void radGirl_CheckedChanged(object sender, EventArgs e)
         {
-            boyTxt.Text = "";
-            boyTxt.ReadOnly = true;
-            girlTxt.ReadOnly = false;
+            if (radGirl.Checked)
+            {
+                boyTxt.Text = "";
+                boyTxt.ReadOnly = true;
+                girlTxt.ReadOnly = false;
+            } else
+            {
+                girlTxt.Text = "";
+                girlTxt.ReadOnly = true;
+                boyTxt.ReadOnly = false;
+            }
+            
         }
 
         private void radBoy_CheckedChanged(object sender, EventArgs e)
         {
-            girlTxt.Text = "";
-            girlTxt.ReadOnly = true;
-            boyTxt.ReadOnly = false;
+            
         }
 
         private void bereken_Click(object sender, EventArgs e)
         {
-            Double fatherHeight = Convert.ToDouble(fatherTxt.Text);
-            Double motherHeight = Convert.ToDouble(motherTxt.Text);
+            Double parentsHeight = Convert.ToDouble(fatherTxt.Text) + Convert.ToDouble(motherTxt.Text);
             Double result;
 
             if (radBoy.Checked)
             {
-                result = (fatherHeight + motherHeight + 13) / 2 + 4.5;
-                boyTxt.Text = String.Format("{000} cm", result);
+                result = (parentsHeight + 13) / 2 + 4.5;
+                boyTxt.Text = String.Format("{0} cm", result);
             } else if (radGirl.Checked)
             {
-                result = (fatherHeight + motherHeight - 13) / 2 + 4.5;
-                girlTxt.Text = String.Format("{000} cm", result);
+                result = (parentsHeight - 13) / 2 + 4.5;
+                girlTxt.Text = String.Format("{0} cm", result);
             }
         }
 
         private void sluiten_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit();//same as this.Close()?
+        }
+
+        private void jongenRad_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void meisjeRad_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VerwachteLengte_Load(object sender, EventArgs e)
+        {
+                  
         }
     }
 }
