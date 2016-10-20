@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.guessNumTxt = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.TextBox();
@@ -35,6 +36,7 @@
             this.eval = new System.Windows.Forms.Button();
             this.newGame = new System.Windows.Forms.Button();
             this.End = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -99,6 +101,12 @@
             this.End.UseVisualStyleBackColor = true;
             this.End.Click += new System.EventHandler(this.End_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Raadspel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,6 +121,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Raadspel";
             this.Text = "Raadspel";
+            this.Load += new System.EventHandler(this.Raadspel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +136,6 @@
         private System.Windows.Forms.Button eval;
         private System.Windows.Forms.Button newGame;
         private System.Windows.Forms.Button End;
+        private System.Windows.Forms.Timer timer1;
     }
 }

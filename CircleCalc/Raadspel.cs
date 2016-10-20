@@ -12,8 +12,9 @@ namespace CircleCalc
 {
     public partial class Raadspel : Form
     {
-        int totGuesses = 0;
-        int randNum;
+        private int totGuesses = 0;
+        private int randNum = 1;
+        private int teller;
 
         public Raadspel()
         {
@@ -30,6 +31,7 @@ namespace CircleCalc
             if(guess == randNum)
             {
                 result.Text = "U heeft het geraden in " + totGuesses + " beurten.";
+                numGuesses.Text = "Geraden in: " + teller + " seconden";
                 totGuesses = 0;
             } else if (guess < randNum)
             {
@@ -47,11 +49,23 @@ namespace CircleCalc
             result.Text = "";
             numGuesses.Text = "";
             guessNumTxt.Text = "";
+            teller = 0;
         }
 
         private void End_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Raadspel_Load(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            randNum = rand.Next(101);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            teller++;
         }
     }
 }
