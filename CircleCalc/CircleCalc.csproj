@@ -89,6 +89,12 @@
     <Compile Include="FrmSnelste.Designer.cs">
       <DependentUpon>FrmSnelste.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimer.Designer.cs">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FunctieVoorbeeld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSnelste.resx">
       <DependentUpon>FrmSnelste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimer.resx">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FunctieVoorbeeld.resx">
       <DependentUpon>FunctieVoorbeeld.cs</DependentUpon>

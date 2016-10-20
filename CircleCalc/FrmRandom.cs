@@ -12,6 +12,9 @@ namespace CircleCalc
 {
     public partial class FrmRandom : Form
     {
+        private int somWaarden;       
+        private int aantalBepalingen = 0;
+
         public FrmRandom()
         {
             InitializeComponent();
@@ -19,8 +22,17 @@ namespace CircleCalc
 
         private void btnNieuweWaarde_Click(object sender, EventArgs e)
         {
+            double gemiddelde;
+            aantalBepalingen ++;
             Random willekeurigBepaling = new Random();
-            int willekeurigGetal = willekeurigBepaling.Next();
+            int willekeurigGetal = willekeurigBepaling.Next(200,401);
+            randTxt.Text = willekeurigGetal.ToString();
+
+            somWaarden += willekeurigGetal;
+            somWaardenTxt.Text = somWaarden.ToString();
+
+            gemiddelde = Convert.ToDouble(somWaarden) / aantalBepalingen; //division make sure double is involved
+            gemiddeldeTxt.Text = String.Format("{0:0.00}",gemiddelde);
         }
     }
 }

@@ -97,6 +97,7 @@
             this.End.TabIndex = 6;
             this.End.Text = "Einde";
             this.End.UseVisualStyleBackColor = true;
+            this.End.Click += new System.EventHandler(this.End_Click);
             // 
             // Raadspel
             // 

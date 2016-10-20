@@ -48,5 +48,10 @@ namespace CircleCalc
             numGuesses.Text = "";
             guessNumTxt.Text = "";
         }
+
+        private void End_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
