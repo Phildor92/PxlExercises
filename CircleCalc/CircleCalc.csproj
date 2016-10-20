@@ -77,6 +77,12 @@
     <Compile Include="FrmBewerking.Designer.cs">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandom.Designer.cs">
+      <DependentUpon>FrmRandom.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSnelste.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBewerking.resx">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandom.resx">
+      <DependentUpon>FrmRandom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSnelste.resx">
       <DependentUpon>FrmSnelste.cs</DependentUpon>
