@@ -13,7 +13,7 @@ namespace CircleCalc
     public partial class Raadspel : Form
     {
         private int totGuesses = 0;
-        private int randNum = 1;
+        private int randNum;
         private int teller;
 
         public Raadspel()
@@ -45,10 +45,11 @@ namespace CircleCalc
         private void newGame_Click(object sender, EventArgs e)
         {
             Random rand = new Random();
-            randNum = rand.Next(101);
+            randNum = rand.Next(1, 101);
             result.Text = "";
             numGuesses.Text = "";
             guessNumTxt.Text = "";
+            guessNumTxt.Focus();
             teller = 0;
         }
 
@@ -60,7 +61,7 @@ namespace CircleCalc
         private void Raadspel_Load(object sender, EventArgs e)
         {
             Random rand = new Random();
-            randNum = rand.Next(101);
+            randNum = rand.Next(1, 101);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

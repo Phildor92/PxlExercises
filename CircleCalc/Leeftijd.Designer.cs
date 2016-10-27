@@ -41,12 +41,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblTijd = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtDagen = new System.Windows.Forms.TextBox();
+            this.txtMaanden = new System.Windows.Forms.TextBox();
+            this.txtJaren = new System.Windows.Forms.TextBox();
+            this.btnBereken = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.txtDagen);
+            this.panel1.Controls.Add(this.txtMaanden);
+            this.panel1.Controls.Add(this.txtJaren);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -55,7 +62,7 @@
             this.panel1.Controls.Add(this.jaarTxt);
             this.panel1.Location = new System.Drawing.Point(41, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 113);
+            this.panel1.Size = new System.Drawing.Size(392, 113);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -151,11 +158,46 @@
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // txtDagen
+            // 
+            this.txtDagen.Location = new System.Drawing.Point(219, 76);
+            this.txtDagen.Name = "txtDagen";
+            this.txtDagen.ReadOnly = true;
+            this.txtDagen.Size = new System.Drawing.Size(100, 20);
+            this.txtDagen.TabIndex = 8;
+            // 
+            // txtMaanden
+            // 
+            this.txtMaanden.Location = new System.Drawing.Point(219, 49);
+            this.txtMaanden.Name = "txtMaanden";
+            this.txtMaanden.ReadOnly = true;
+            this.txtMaanden.Size = new System.Drawing.Size(100, 20);
+            this.txtMaanden.TabIndex = 7;
+            // 
+            // txtJaren
+            // 
+            this.txtJaren.Location = new System.Drawing.Point(219, 22);
+            this.txtJaren.Name = "txtJaren";
+            this.txtJaren.ReadOnly = true;
+            this.txtJaren.Size = new System.Drawing.Size(100, 20);
+            this.txtJaren.TabIndex = 6;
+            // 
+            // btnBereken
+            // 
+            this.btnBereken.Location = new System.Drawing.Point(341, 46);
+            this.btnBereken.Name = "btnBereken";
+            this.btnBereken.Size = new System.Drawing.Size(75, 23);
+            this.btnBereken.TabIndex = 5;
+            this.btnBereken.Text = "Bereken2";
+            this.btnBereken.UseVisualStyleBackColor = true;
+            this.btnBereken.Click += new System.EventHandler(this.btnBereken_Click);
+            // 
             // Leeftijd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 262);
+            this.Controls.Add(this.btnBereken);
             this.Controls.Add(this.lblTijd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bereken);
@@ -185,5 +227,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTijd;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txtDagen;
+        private System.Windows.Forms.TextBox txtMaanden;
+        private System.Windows.Forms.TextBox txtJaren;
+        private System.Windows.Forms.Button btnBereken;
     }
 }

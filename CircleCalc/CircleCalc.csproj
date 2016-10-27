@@ -133,6 +133,12 @@
     <Compile Include="Raadspel.Designer.cs">
       <DependentUpon>Raadspel.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResizableFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResizableFrm.Designer.cs">
+      <DependentUpon>ResizableFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalarySlider.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,12 @@
     </Compile>
     <Compile Include="TelefoonKost.Designer.cs">
       <DependentUpon>TelefoonKost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackbarTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackbarTimer.Designer.cs">
+      <DependentUpon>TrackbarTimer.cs</DependentUpon>
     </Compile>
     <Compile Include="VerwachteLengte.cs">
       <SubType>Form</SubType>
@@ -190,6 +202,9 @@
     <EmbeddedResource Include="Leeftijd.resx">
       <DependentUpon>Leeftijd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lotto.resx">
+      <DependentUpon>Lotto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Machtsverheffing.resx">
       <DependentUpon>Machtsverheffing.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,9 +219,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Raadspel.resx">
       <DependentUpon>Raadspel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResizableFrm.resx">
+      <DependentUpon>ResizableFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalarySlider.resx">
       <DependentUpon>SalarySlider.cs</DependentUpon>
@@ -219,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelefoonKost.resx">
       <DependentUpon>TelefoonKost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackbarTimer.resx">
+      <DependentUpon>TrackbarTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerwachteLengte.resx">
       <DependentUpon>VerwachteLengte.cs</DependentUpon>
@@ -235,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beeld 20.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

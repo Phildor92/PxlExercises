@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace CircleCalc
 {
@@ -27,7 +28,7 @@ namespace CircleCalc
             this.Text += "      " + DateTime.Now.DayOfWeek + " " + DateTime.Now.ToLongDateString() /*DateTime.Now.DayOfWeek + " " + DateTime.Now.Day + " " + DateTime.Now.Month + " " + DateTime.Now.Year*/;
         }
 
-        private void bereken_Click(object sender, EventArgs e)
+        private void bereken_Click(object sender, EventArgs e)//inaccurate
         {
             String birthdate = geboorteTxt.Text;
             Int32 year = Convert.ToInt32(birthdate.Substring(6));
@@ -40,12 +41,12 @@ namespace CircleCalc
 
             verschil = datumNow - datumGB;
 
-            Int32 difYears = Convert.ToInt32(verschil.TotalDays / 365);
-            Int32 difMonths = Convert.ToInt32(verschil.TotalDays / 30.42);
+            //Int32 difYears = Convert.ToInt32(verschil.TotalDays / 365);//incorrect
+            //Int32 difMonths = Convert.ToInt32(verschil.TotalDays / 30.42);
             Int32 difDays = Convert.ToInt32(verschil.TotalDays);
 
-            jaarTxt.Text = String.Format("{0} years", difYears);
-            maandTxt.Text = String.Format("{0} months", difMonths);
+            //jaarTxt.Text = String.Format("{0} years", difYears);
+            //maandTxt.Text = String.Format("{0} months", difMonths);
             dagTxt.Text = String.Format("{0} days", difDays);
         }
 
@@ -54,6 +55,18 @@ namespace CircleCalc
             lblTijd.Text = DateTime.Now.ToLongTimeString();
         }
 
-       
+        private void btnBereken_Click(object sender, EventArgs e)
+        {
+            DateTime gbdatum = Convert.ToDateTime(geboorteTxt.Text);
+            DateTime nu = DateTime.Today;//only the date
+
+            long jaren = DateAndTime.DateDiff("yyyy", gbdatum, nu);
+            long maanden = DateAndTime.DateDiff("m", gbdatum, nu);
+            long dagen = DateAndTime.DateDiff("d", gbdatum, nu);
+
+            txtJaren.Text = String.Format("{0} years", jaren);
+            txtMaanden.Text = String.Format("{0} months", maanden);
+            txtDagen.Text = String.Format("{0} days", dagen);
+        }
     }
 }
