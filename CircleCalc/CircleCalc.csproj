@@ -77,6 +77,12 @@
     <Compile Include="FrmBewerking.Designer.cs">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMeetkundigeFiguur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeetkundigeFiguur.Designer.cs">
+      <DependentUpon>FrmMeetkundigeFiguur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRandom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="FrmTimer.Designer.cs">
       <DependentUpon>FrmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVermenigvuldigingstafel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVermenigvuldigingstafel.Designer.cs">
+      <DependentUpon>FrmVermenigvuldigingstafel.cs</DependentUpon>
     </Compile>
     <Compile Include="FunctieVoorbeeld.cs">
       <SubType>Form</SubType>
@@ -187,6 +199,9 @@
     <EmbeddedResource Include="FrmBewerking.resx">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeetkundigeFiguur.resx">
+      <DependentUpon>FrmMeetkundigeFiguur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRandom.resx">
       <DependentUpon>FrmRandom.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTimer.resx">
       <DependentUpon>FrmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVermenigvuldigingstafel.resx">
+      <DependentUpon>FrmVermenigvuldigingstafel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FunctieVoorbeeld.resx">
       <DependentUpon>FunctieVoorbeeld.cs</DependentUpon>
