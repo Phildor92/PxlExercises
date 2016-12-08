@@ -13,7 +13,7 @@ namespace CircleCalc
     public partial class TrackbarTimer : Form
     {
         private Random maakRand = new Random();
-        private bool clicked = false;
+        //private bool clicked = false;
         public TrackbarTimer()
         {
             InitializeComponent();

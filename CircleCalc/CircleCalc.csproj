@@ -77,11 +77,41 @@
     <Compile Include="FrmBewerking.Designer.cs">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEvaluatiePuntenOpToets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEvaluatiePuntenOpToets.Designer.cs">
+      <DependentUpon>FrmEvaluatiePuntenOpToets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListBox.Designer.cs">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListBoxTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListBoxTwo.Designer.cs">
+      <DependentUpon>FrmListBoxTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaandNamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaandNamen.Designer.cs">
+      <DependentUpon>FrmMaandNamen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMeetkundigeFiguur.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMeetkundigeFiguur.Designer.cs">
       <DependentUpon>FrmMeetkundigeFiguur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOmzetWoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOmzetWoord.Designer.cs">
+      <DependentUpon>FrmOmzetWoord.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRandom.cs">
       <SubType>Form</SubType>
@@ -106,6 +136,12 @@
     </Compile>
     <Compile Include="FrmVermenigvuldigingstafel.Designer.cs">
       <DependentUpon>FrmVermenigvuldigingstafel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Rekenmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rekenmenu.Designer.cs">
+      <DependentUpon>Frm_Rekenmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="FunctieVoorbeeld.cs">
       <SubType>Form</SubType>
@@ -199,8 +235,23 @@
     <EmbeddedResource Include="FrmBewerking.resx">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEvaluatiePuntenOpToets.resx">
+      <DependentUpon>FrmEvaluatiePuntenOpToets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListBox.resx">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListBoxTwo.resx">
+      <DependentUpon>FrmListBoxTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaandNamen.resx">
+      <DependentUpon>FrmMaandNamen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMeetkundigeFiguur.resx">
       <DependentUpon>FrmMeetkundigeFiguur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOmzetWoord.resx">
+      <DependentUpon>FrmOmzetWoord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRandom.resx">
       <DependentUpon>FrmRandom.cs</DependentUpon>
@@ -213,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVermenigvuldigingstafel.resx">
       <DependentUpon>FrmVermenigvuldigingstafel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rekenmenu.resx">
+      <DependentUpon>Frm_Rekenmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FunctieVoorbeeld.resx">
       <DependentUpon>FunctieVoorbeeld.cs</DependentUpon>
