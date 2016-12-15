@@ -77,6 +77,18 @@
     <Compile Include="FrmBewerking.Designer.cs">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCommutation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCommutation.Designer.cs">
+      <DependentUpon>FrmCommutation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDobbelstenen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDobbelstenen.Designer.cs">
+      <DependentUpon>FrmDobbelstenen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEvaluatiePuntenOpToets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,12 @@
     <Compile Include="FrmListBoxTwo.Designer.cs">
       <DependentUpon>FrmListBoxTwo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMaalTwee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaalTwee.Designer.cs">
+      <DependentUpon>FrmMaalTwee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMaandNamen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +130,12 @@
     </Compile>
     <Compile Include="FrmOmzetWoord.Designer.cs">
       <DependentUpon>FrmOmzetWoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrijsberekeningWagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrijsberekeningWagen.Designer.cs">
+      <DependentUpon>FrmPrijsberekeningWagen.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRandom.cs">
       <SubType>Form</SubType>
@@ -235,6 +259,12 @@
     <EmbeddedResource Include="FrmBewerking.resx">
       <DependentUpon>FrmBewerking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCommutation.resx">
+      <DependentUpon>FrmCommutation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDobbelstenen.resx">
+      <DependentUpon>FrmDobbelstenen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEvaluatiePuntenOpToets.resx">
       <DependentUpon>FrmEvaluatiePuntenOpToets.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +274,9 @@
     <EmbeddedResource Include="frmListBoxTwo.resx">
       <DependentUpon>FrmListBoxTwo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaalTwee.resx">
+      <DependentUpon>FrmMaalTwee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMaandNamen.resx">
       <DependentUpon>FrmMaandNamen.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOmzetWoord.resx">
       <DependentUpon>FrmOmzetWoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrijsberekeningWagen.resx">
+      <DependentUpon>FrmPrijsberekeningWagen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRandom.resx">
       <DependentUpon>FrmRandom.cs</DependentUpon>
@@ -332,6 +368,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\beeld 20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\wagen0.png" />
+    <Content Include="Resources\wagen1.png" />
+    <Content Include="Resources\wagen2.png" />
+    <Content Include="Resources\wagen3.png" />
+    <Content Include="Resources\wagen4.png" />
+    <Content Include="Resources\wagen5.png" />
+    <Content Include="Resources\wagen6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
